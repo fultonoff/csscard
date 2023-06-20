@@ -1,5 +1,4 @@
-
-import bg from "../assets/images/game.jpg";
+import bg from "../assets/images/background.png";
 
 import controller from "../assets/images/controller.jpeg";
 import "../App.css";
@@ -18,13 +17,15 @@ const GameCard = () => {
         <div className="glass">
           <svg className="svg">
             <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
-              <path d="M0.001,0.081 C0,0.031,0.045,-0.007,0.093,0.001 C0.454,0.066,0.56,0.067,0.908,0.003 C0.956,-0.006,1,0.032,1,0.082 L0.994,0.921 C0.994,0.965,0.959,1,0.916,1 H0.084 C0.041,1,0.006,0.965,0.006,0.921 L0.001,0.081"></path>
+              <path d="M0,0.184 C0,0.09,0,0.044,0.024,0.019 C0.048,-0.006,0.087,0.001,0.166,0.016 C0.267,0.034,0.397,0.053,0.5,0.053 C0.603,0.053,0.733,0.034,0.834,0.016 C0.913,0.001,0.952,-0.006,0.976,0.019 C1,0.044,1,0.09,1,0.184 V1 H0 V0.184"></path>
             </clipPath>
           </svg>
 
-          <div className="clipped"></div>
+          <div className="clipped">
+          </div>
         </div>
       </div>
+      
     </div>
   );
 };
