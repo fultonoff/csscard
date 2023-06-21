@@ -1,4 +1,5 @@
 import bg from "../assets/images/background.png";
+import online from "../assets/images/Symbol.png";
 
 import controller from "../assets/images/controller.jpeg";
 import "../App.css";
@@ -8,7 +9,9 @@ const GameCard = () => {
     <div className="container">
       <div className="gameCard">
         <div className="imgBox">
-          <img src={bg} alt="" className="img" />
+
+          {/* background Image */}
+          <img src={bg} alt="background image" className="img" />
         </div>
 
         <div className="upImage">
@@ -22,10 +25,35 @@ const GameCard = () => {
           </svg>
 
           <div className="clipped">
+            <div className="content-wrapper">
+              <h1 className="title">Game Design</h1>
+              <p className="description">
+                Always a new challenge. Great place to make new friends.
+              </p>
+
+              {/* user */}
+              <div className="user-info">
+                <div className="user-info__wraper">
+                  <img
+                    src={online}
+                    alt="user icon"
+                    className="user-info__icon"
+                  />
+                  <span className="user-info__detail">28,628 Online</span>
+                </div>
+                <div className="user-info__wraper">
+                  <img
+                    src={online}
+                    alt="user icon"
+                    className="user-info__icon"
+                  />
+                  <span className="user-info__detail">28,628 Online</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
